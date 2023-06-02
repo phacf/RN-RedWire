@@ -10,12 +10,12 @@ const style = StyleSheet.create({
   },
 });
 
-const Articles = () => {
+const Articles = ({navigation}) => {
   console.log('artcles')
   return (
     <View style={style.container}>
       <Text>Articles</Text>
-      <Button title={'asdf'} />
+      <Button title={'Articles_screen'} onPress={()=> navigation.navigate('Articles_screen')}/>
     </View>
   );
 };

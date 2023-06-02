@@ -7,15 +7,19 @@ import {connect} from 'react-redux';
 
 import {Stack, HomeStack, VideoStack} from './Stacks';
 
+
 //screens
 import Auth from '../screens/Auth';
+import Videos from '../screens/Home/Videos';
+import Articles from '../screens/Home/Articles';
+
 
 const Drawer = createDrawerNavigator();
 
 const MainDrawer = () => (
   <Drawer.Navigator>
-    <Drawer.Screen name="Home" component={HomeStack} />
-    <Drawer.Screen name="Videos" component={VideoStack} />
+    <Drawer.Screen name="Home" component={Videos} />
+    <Drawer.Screen name="Videos" component={Articles} />
   </Drawer.Navigator>
 );
 
